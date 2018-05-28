@@ -1,0 +1,43 @@
+.header-s{
+  position: fixed;
+  width: 100%;
+  &__nav{
+    width: 100%;
+    @include flex(row, space-between, center, nowrap);
+  }
+  &__logo{
+    @include flex(row, flex-start, center, nowrap);
+    h1 {
+      margin-left: 10px;
+      font-family: 'ArbutusSlab';
+      color: $header_color;
+      font-size: 40px;
+      font-weight: normal;
+    }
+  }
+  hr{
+    border: none;
+    background-color: $header_color;
+    color: $header_color;
+    height: 1px;
+  }
+}
+.header-list{
+  max-width: 700px;
+  letter-spacing: 1px;
+  width: 100%;
+  @include flex(row, space-around, center, nowrap);
+  &__item:last-child .header-list__link{
+    margin-left: 10px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-color: rgba(71, 158, 225, 0.8);
+  }
+  &__link{
+    width: 100%;
+    font-family: 'Relaway-Semibold';
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $header_color;
+  }
+}
