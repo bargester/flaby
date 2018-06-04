@@ -1,4 +1,95 @@
 .intro-s{
-  height: 200vh;
+  height: 100vh;
   background-color: #42a8f6;
+  overflow-y: hidden;
+  position: relative;
+  &__main{
+    position: relative;
+  }
+  &__title {
+    margin: 0;
+    position: absolute;
+    top: 350px;
+    max-width: 540px;
+    width: 100%;
+    color: #fff;
+    h2{
+      font-family: MuseoSlab;
+      font-size: 40px;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: justify;
+    }
+    p{
+      margin-top: 30px;
+      font-family: Relaway-Medium;
+      font-size: 26px;
+      line-height: 40px;
+      width: 85%;
+    }
+  }
+  &__btn-wrap{
+    @include flex(row, flex-start, center, nowrap);
+    margin-top: 60px;
+  }
+  &__phone-block{
+    position: absolute;
+    top: -140px;
+    right: 0;
+    img{
+      position: absolute;
+    }
+    &--input{
+      width: 398px;
+      top: 112px;
+      left: 32px;
+    }
+  }
+  &__pencils-block{
+    position: absolute;
+    bottom: 0;
+    img{
+      position: absolute;
+      left: 0;
+    }
+    &--one{
+      bottom: 80px;
+    }
+    &--two{
+      bottom: 10px;
+    }
+  }
+  &__earphones{
+    position: absolute;
+    top: 425px;
+    right: 0;
+  }
+}
+.btn{
+  height: 80px;
+  width: 240px;
+  line-height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Relaway-Semibold;
+  font-size: 20px;
+  &--one{
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    padding-left: 25px;
+    img{
+      position: absolute;
+      top: 24px;
+      left: 31px;
+    }
+  }
+  &--two{
+    background-color: #53a0db;
+    color: #fff;
+    margin-left: 30px;
+  }
+}
+.shadow{
+  filter: drop-shadow(5px 5px 5px #222);
 }
