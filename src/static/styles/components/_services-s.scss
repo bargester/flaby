@@ -1,0 +1,45 @@
+.services-s{
+  height: 690px;
+}
+
+.services-block{
+  margin-top: 95px;
+  @include flex(row, center, center, nowrap);
+  &__item{
+    width: 310px;
+    height: 250px;
+    @include flex(column, space-between, center, nowrap);
+    text-align: center;
+    h4{
+      font-family: Relaway-Bold;
+      font-size: 18px;
+    }
+    p{
+      width: 85%;
+      font-family: Relaway-Medium;
+      font-size: 14px;
+    }
+  }
+}
+
+.main-title{
+  margin-top: 95px;
+  @include flex(column, center, center, nowrap);
+  font-family: RobotoSlab;
+  p{
+    font-size: 18px;
+  }
+  h3{
+    margin-top: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  hr{
+    margin-top: 15px;
+    width: 30px;
+    height: 2px;
+    border: none;
+    background-color: #2eb0ec;
+    color: #2eb0ec;
+  }
+}
