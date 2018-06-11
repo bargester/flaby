@@ -4,7 +4,7 @@
 
 .services-block{
   margin-top: 95px;
-  @include flex(row, center, center, nowrap);
+  @include flex(row, center, center, wrap);
   &__item{
     width: 310px;
     height: 250px;
